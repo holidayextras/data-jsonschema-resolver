@@ -1,0 +1,14 @@
+{
+  "type": "object",
+
+  "allOf": [
+    { "$ref": "a/schema-a.json#"},
+    {
+      "properties": {
+        "age": {
+          "type": "number"
+        }
+      }
+    }
+  ]
+}
