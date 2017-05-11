@@ -2,7 +2,7 @@
   "type": "object",
 
   "allOf": [
-    { "$ref": "b/schema-b.json#" },
+    { "$ref": "http://127.0.0.1:12345/b/schema-b.json#" },
     { "properties": {
         "job": { "type": "string" }
       }
