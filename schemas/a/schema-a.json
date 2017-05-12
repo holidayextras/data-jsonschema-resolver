@@ -1,5 +1,6 @@
 {
   "type": "object",
+  "$id": "http://127.0.0.1:12345/a/schema-a.json",
   "properties": {
     "name": {
       "type": "string"

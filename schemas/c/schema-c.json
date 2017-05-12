@@ -1,6 +1,6 @@
 {
   "type": "object",
-
+  "$id": "http://127.0.0.1:12345/c/schema-x.json",
   "allOf": [
     { "$ref": "http://127.0.0.1:12345/b/schema-b.json#" },
     { "properties": {

@@ -1,5 +1,32 @@
 Tests to see how JSON schema are resolved.
 
+### Proposed format
+
+(not implemented, work in progress)
+
+1. All schema have a unique ID ($id)
+2. All $ref will be fully qualified
+3. All properties in a schema will be required 
+4. On deploy we resolve all `$id` and `$ref` to a fully qualified target
+
+e.g. deploy to a web server
+we complete scheme and path in $id
+
+deploy to a database we create scheme to indicate 
+
+`$id` in schema is 
+`"http://127.0.0.1:12345/c/schema-x.json"`
+or 
+`"c/schema-x.json"`
+
+on deploy we write
+
+`"$id": "http://schema.holidayextras.com/c/schema-x.json"`
+or
+`"$id": "mysql://schema.holidayextras.com/c/schema-x.json"`
+
+
+
 Not clear if this is a python thing or a JSON schema thing.
 
 The problem:
